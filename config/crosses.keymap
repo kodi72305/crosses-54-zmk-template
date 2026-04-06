@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define _______ &trans
+
 / {
     chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
@@ -41,16 +43,38 @@
                                         &lt 3 LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
             >;
         };
-
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-                &trans         &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans       &trans       &trans       &studio_unlock
+                &trans         &mo 4      &mo 5      &trans     &trans     &trans     &trans       &trans     &trans       &trans       &trans       &studio_unlock
                 &trans         &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans       &trans       &trans       &trans
                 &trans         &trans     &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans     &trans       &trans     &trans       &trans       &trans       &trans
                 &trans         &trans     &trans     &trans     &trans     &trans     &trans       &trans     &trans       &trans       &trans       &trans
                                                      &trans     &trans     &trans     &trans       &trans     &trans     
             >;
         };
+
+        scroll_layer {
+            display-name = "Scroll";
+            bindings = <
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                                            _______ _______ _______ _______ _______ _______
+            >;
+        };
+
+        sniper_layer {
+            display-name = "Sniper";
+            bindings = <
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                _______ _______ _______ _______ _______ _______   _______ _______ _______ _______ _______ _______
+                                            _______ _______ _______ _______ _______ _______
+            >;
+        };
+
     };
 };
