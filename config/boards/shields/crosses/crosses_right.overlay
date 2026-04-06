@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2025 Vincent Franco
  * SPDX-License-Identifier: MIT
- * Custom Crosses overlay with scroll/sniper/automouse layering.
+ * Custom Crosses overlay tweaks for Crosses 54.
  */
 
 #include "crosses.dtsi"
@@ -52,9 +52,6 @@
     y-input-code = <INPUT_REL_Y>;
     force-high-performance;
     force-awake;
-    automouse-layer = <3>;
-    scroll-layers = <4>;
-    snipe-layers = <5>;
   };
 };
 
@@ -62,7 +59,6 @@
 &trackball_central_listener {
   status = "okay";
   device = <&trackball_central>;
-  input-processors = <&zip_ble_report_rate_limit>;
 };
 
 &pro_micro_i2c {

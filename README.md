@@ -4,9 +4,8 @@
 ![Keymap](keymap-drawer/crosses.svg)
 
 ## Trackball Modes
-- **Automouse layer** - the mouse layer (layer 3) now enables itself whenever the PMW3610 sensor detects movement, so you always have access to the mouse buttons without holding a modifier.
-- **Scroll mode** - while the mouse layer is active, hold the `1` key (second column) to momentarily engage the new `Scroll` layer. The firmware switches the trackball into smooth-scroll reporting until you release the key.
-- **Sniper mode** - while on the mouse layer, hold the `2` key (third column) to drop into the low-CPI `Sniper` layer for high-precision cursor control.
+- **Automouse layer** – `zip_temp_layer` watches the PMW3610 split and автоматически включает слой 3 (Mouse) на 350 мс каждый раз, когда трекбол начинает движение. Поэтому мышиные кнопки и курсор всегда доступны без отдельного хоткея.
+- **Навигация (`MO(4)`)** – большой палец на основной раскладке включает слой 4 (Left Arrows): домой/End, PgUp/PgDn и стрелки слева, как у jpatrolla.
+- **Scroll/Sniper (`HT_MO5`)** – второй большой палец с `&ht_mo5` даёт короткое нажатие `MO(5)` и трёхсекундный временный переключатель слоя 5. Пока слой 5 активен, работают макросы `&msc MOVE_Y(...)`, `mclk_shift`, MB5 и альтернативные клики — это и есть «scroll» и «sniper» режимы из форка jpatrolla.
 
-You can adjust CPI values, scroll tick rate, and the automouse timeout inside `config/boards/shields/crosses/crosses_right.conf`. The device-tree overlay in `config/boards/shields/crosses/crosses_right.overlay` wires the new layers (3 automouse, 4 scroll, 5 sniper) into the PMW3610 driver.
-
+Обработчики `zip_temp_layer`, `zip_ble_report_rate_limit` и `msc` берутся из модулей `zmk-input-processor-xyz` и `zmk-report-rate-limit`, которые уже присутствуют через `gggw-zmk-keebs`. Никаких полей `automouse-layer` в драйвере PMW3610 теперь не нужно — всё переключение делается через input processors и макросы в `config/crosses.keymap`.
