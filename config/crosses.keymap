@@ -1,3 +1,4 @@
+#include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -32,6 +33,7 @@
         #input-processor-cells = <2>;
         require-prior-idle-ms = <500>;
         //excluded-positions = <1 2 3>;
+
     };
 };
 
@@ -96,6 +98,11 @@
         MOD_MORPH_AS(BSLH)
         MOD_MORPH_AS(LBKT)
         MOD_MORPH_AS(RBKT)
+        caps_lock_word: caps_lock_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+        };
+
         td_caps: tap_dance_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -176,6 +183,26 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&mkp>;
         };
+        nav_lang: nav_lang {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            hold-while-undecided;
+            bindings = <&lg_tog>, <&mo 4>;
+        };
+
+    };
+
+    macros {
+        lg_tog: lg_tog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &tog 6>;
+            tap-ms = <30>;
+            wait-ms = <0>;
+        };
     };
 
     keymap {
@@ -187,7 +214,7 @@
                 &kp TAB         AS(Q)           AS(W)           AS(E)           AS(R)           AS(T)                       AS(Y)           AS(U)           AS(I)           AS(O)           AS(P)               AS(MINUS)
                 &td_caps        &hml LCTRL A    &hml LALT S     &hml LGUI D     &hml_s LSHFT F  AS(G)                       AS(H)           &hmr_s RSHFT J  &hmr RGUI K     &hmr RALT L     &hmr RCTRL SEMI     AS(SQT)
                 &mkp LCLK       AS(Z)           AS(X)           AS(C)           AS(V)           AS(B)                       AS(N)           AS(M)           AS(COMMA)       AS(DOT)         AS(FSLH)            AS(BSLH)
-                                                                &mo 4           &ht_mo5 5 0     &bsdel                      &kp SPACE       &kp RET         &mo 2
+                                                                &nav_lang          &ht_mo5 5 0     &bsdel                      &kp SPACE       &kp RET         &mo 2
             >;
         }; 
         
@@ -234,6 +261,7 @@
             >;
         };
         mouse_layer_alt {
+
             display-name = "Mouse Alt";
             bindings = <        
                 &lt 5 0       &trans            &trans          &trans          &trans          &trans                      &trans          &trans          &trans          &trans           &trans             &studio_unlock
@@ -241,6 +269,16 @@
                 &trans        &trans            &trans          &mkp MCLK       &mkp LCLK       &msc MOVE_Y(20)             &mkp MB5        &mkp LCLK       &mkp MCLK       &trans           &trans             &trans
                 &trans        &trans            &trans          &trans          &mclk_shift     &mkp MB5                    &trans          &trans          &trans          &trans           &trans             &trans
                                                                 &trans          &tog 5          &trans                      &trans          &trans          &trans
+            >;
+        };
+
+        ru_layer {
+            display-name = "Base RU";
+            bindings = <
+                &kp ESC         &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_IE                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE    &kp RU_CYRILLIC_HA       &kp RU_CYRILLIC_HARD_SIGN
+                &kp TAB         &hml LCTRL RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LGUI RU_CYRILLIC_VE  &hml_s LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE             &kp RU_CYRILLIC_ER  &hmr_s RSHFT RU_CYRILLIC_O  &hmr RGUI RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RCTRL RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+                &mkp LCLK       &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                    &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_YU  &kp RU_DOT  &kp RU_CYRILLIC_IO
+                                                                &nav_lang          &ht_mo5 5 0     &bsdel                      &kp SPACE       &kp RET         &mo 2
             >;
         };
     };
