@@ -350,9 +350,6 @@
     };
 };
 
-
-};
-
 &trackball_central_listener {
     input-processors = <&zip_temp_layer 8 350>, <&zip_ble_report_rate_limit>;
 };
