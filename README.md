@@ -3,13 +3,14 @@
 ### Default Firmware Keymap
 ![Keymap](keymap-drawer/crosses.svg)
 
-## Trackball / Pointer
-- Automouse: `zip_temp_layer` keeps layer 8 (Mouse) active for 350 ms whenever the PMW3610 reports motion, so the mouse buttons are accessible even without holding a modifier.
-- Manual scroll/sniper: the original `mouse` and `sniper` layers from your gggw-zmk-keebs config stay intact; trigger them with your existing combos or `MO()` bindings as before.
-- No devicetree overlays are required for these features anymore?`config/crosses.keymap` wires the input processors directly.
+## Scroll / Sniper Workflow
+1. **Automouse** — `zip_temp_layer` следит за движением PMW3610 и держит слой 3 (Mouse) активным ещё ~350 мс после каждого движения, так что курсорные кнопки живут без отдельного хоткея.
+2. **Навигация (`&mo 4`)** — верхний левый столбец в Mouse-слое: тап = `ESC`, удержание = слой 4 (стрелки/Home/End/PgUp/PgDn), как у jpatrolla.
+3. **Scroll/Sniper (`&ht_mo5`)** — соседняя клавиша запускает `temp_l5`: короткое нажатие даёт `Delete`, удержание включает слой 5 (Mouse Alt) на ~3 с и автоматически выключает его. Пока слой 5 активен, `&msc MOVE_Y(±20)` отдаёт wheel-события, `mclk_gui/mclk_shift` дёргают DPI и режим скролла, поэтому любое движение шара превращается в плавный вертикальный или горизонтальный скролл.
+4. **Sniper DPI** — на Mouse Alt доступны `mkp MB5` и `mclk_shift`, поэтому можно временно понизить чувствительность без выхода из слоя.
 
 ## RU/EN Workflow
-- Tap the left thumb combo (`lg_tog`) to send `Win+Space` and toggle layer 1 (Russian). Hold the same thumb key to reach the Navigation layer, just like in your original layout.
-- `keys_ru.h` and `encoding_macros.dtsi` were copied over from your repo, so the Cyrillic base layer, symbol layers, and encoding layer behave exactly as before.
-- Combos `num_lauer`, `en_sym`, and `ru_sym` were also preserved, so layer indices (0?10) match your previous build.
+- Комбо `lang` шлёт `Win+Space` и делает `TOG 6`, переключая базовый слой EN ↔ RU; удержание большого пальца по-прежнему даёт `leftArrows`.
+- `en_sym` и `ru_sym` поднимают соответствующие символные слои (1 и 7), `num_lauer` включает новый numpad (слой 8).
+- `keys_ru.h` и `encoding_macros.dtsi` перенесены из твоей gggw-конфигурации, поэтому кириллический слой, символы и слой `Encoding` ведут себя так же, как раньше.
 
