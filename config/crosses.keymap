@@ -97,6 +97,11 @@
         MOD_MORPH_AS(BSLH)
         MOD_MORPH_AS(LBKT)
         MOD_MORPH_AS(RBKT)
+        caps_lock_word: caps_lock_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+        };
         td_caps: tap_dance_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
