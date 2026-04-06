@@ -1,0 +1,686 @@
+        /* Auto-generated from encoding_map.txt */
+        code_upper_A_macro: code_upper_A_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_A";
+            bindings = <&kp N2 &kp LS(FSLH) &kp L &kp LS(L)>;
+        };
+
+        code_lower_A_macro: code_lower_A_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_A";
+            bindings = <&kp N4 &kp D &kp LS(N5) &kp LS(F)>;
+        };
+
+        code_A: code_A {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_A_macro &code_upper_A_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_B_macro: code_upper_B_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_B";
+            bindings = <&kp N5 &kp R &kp LS(N6) &kp LS(W)>;
+        };
+
+        code_lower_B_macro: code_lower_B_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_B";
+            bindings = <&kp N6 &kp LS(EQUAL) &kp U &kp LS(Y)>;
+        };
+
+        code_B: code_B {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_B_macro &code_upper_B_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_C_macro: code_upper_C_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_C";
+            bindings = <&kp N3 &kp D &kp LS(V) &kp LS(FSLH)>;
+        };
+
+        code_lower_C_macro: code_lower_C_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_C";
+            bindings = <&kp R &kp N4 &kp LS(N7) &kp LS(F)>;
+        };
+
+        code_C: code_C {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_C_macro &code_upper_C_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_D_macro: code_upper_D_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_D";
+            bindings = <&kp LS(N6) &kp N3 &kp LS(T) &kp N>;
+        };
+
+        code_lower_D_macro: code_lower_D_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_D";
+            bindings = <&kp F &kp N8 &kp LS(N1) &kp LS(M)>;
+        };
+
+        code_D: code_D {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_D_macro &code_upper_D_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_E_macro: code_upper_E_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_E";
+            bindings = <&kp Q &kp N6 &kp LS(R) &kp LS(EQUAL)>;
+        };
+
+        code_lower_E_macro: code_lower_E_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_E";
+            bindings = <&kp LS(N) &kp EQUAL &kp N9 &kp H>;
+        };
+
+        code_E: code_E {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_E_macro &code_upper_E_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_F_macro: code_upper_F_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_F";
+            bindings = <&kp N4 &kp LS(N) &kp LS(N6) &kp J>;
+        };
+
+        code_lower_F_macro: code_lower_F_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_F";
+            bindings = <&kp LS(EQUAL) &kp I &kp N3 &kp LS(N)>;
+        };
+
+        code_F: code_F {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_F_macro &code_upper_F_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_G_macro: code_upper_G_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_G";
+            bindings = <&kp A &kp LS(D) &kp N9 &kp LS(N2)>;
+        };
+
+        code_lower_G_macro: code_lower_G_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_G";
+            bindings = <&kp N7 &kp S &kp LS(S) &kp LS(N2)>;
+        };
+
+        code_G: code_G {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_G_macro &code_upper_G_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_H_macro: code_upper_H_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_H";
+            bindings = <&kp N2 &kp LS(V) &kp LS(N3) &kp N>;
+        };
+
+        code_lower_H_macro: code_lower_H_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_H";
+            bindings = <&kp LS(N6) &kp LS(M) &kp O &kp N8>;
+        };
+
+        code_H: code_H {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_H_macro &code_upper_H_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_I_macro: code_upper_I_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_I";
+            bindings = <&kp LS(N) &kp N5 &kp LS(N1) &kp Y>;
+        };
+
+        code_lower_I_macro: code_lower_I_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_I";
+            bindings = <&kp D &kp LS(R) &kp N3 &kp LS(N7)>;
+        };
+
+        code_I: code_I {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_I_macro &code_upper_I_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_J_macro: code_upper_J_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_J";
+            bindings = <&kp LS(B) &kp LS(N6) &kp G &kp N8>;
+        };
+
+        code_lower_J_macro: code_lower_J_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_J";
+            bindings = <&kp LS(E) &kp K &kp LS(N3) &kp N3>;
+        };
+
+        code_J: code_J {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_J_macro &code_upper_J_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_K_macro: code_upper_K_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_K";
+            bindings = <&kp N1 &kp LS(FSLH) &kp LS(N) &kp B>;
+        };
+
+        code_lower_K_macro: code_lower_K_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_K";
+            bindings = <&kp N4 &kp A &kp LS(T) &kp LS(EQUAL)>;
+        };
+
+        code_K: code_K {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_K_macro &code_upper_K_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_L_macro: code_upper_L_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_L";
+            bindings = <&kp LS(N1) &kp LS(R) &kp Z &kp N3>;
+        };
+
+        code_lower_L_macro: code_lower_L_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_L";
+            bindings = <&kp W &kp LS(N8) &kp LS(K) &kp N3>;
+        };
+
+        code_L: code_L {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_L_macro &code_upper_L_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_M_macro: code_upper_M_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_M";
+            bindings = <&kp LS(G) &kp N0 &kp O &kp LS(N4)>;
+        };
+
+        code_lower_M_macro: code_lower_M_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_M";
+            bindings = <&kp LS(X) &kp LS(N4) &kp N1 &kp D>;
+        };
+
+        code_M: code_M {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_M_macro &code_upper_M_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_N_macro: code_upper_N_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_N";
+            bindings = <&kp N1 &kp LS(Z) &kp LS(N2) &kp C>;
+        };
+
+        code_lower_N_macro: code_lower_N_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_N";
+            bindings = <&kp LS(O) &kp E &kp LS(N4) &kp N5>;
+        };
+
+        code_N: code_N {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_N_macro &code_upper_N_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_O_macro: code_upper_O_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_O";
+            bindings = <&kp LS(E) &kp LS(EQUAL) &kp N9 &kp E>;
+        };
+
+        code_lower_O_macro: code_lower_O_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_O";
+            bindings = <&kp B &kp N5 &kp LS(E) &kp LS(N3)>;
+        };
+
+        code_O: code_O {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_O_macro &code_upper_O_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_P_macro: code_upper_P_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_P";
+            bindings = <&kp LS(H) &kp LS(N1) &kp Z &kp N3>;
+        };
+
+        code_lower_P_macro: code_lower_P_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_P";
+            bindings = <&kp LS(R) &kp LS(N6) &kp N5 &kp Z>;
+        };
+
+        code_P: code_P {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_P_macro &code_upper_P_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_Q_macro: code_upper_Q_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_Q";
+            bindings = <&kp N8 &kp S &kp LS(L) &kp LS(EQUAL)>;
+        };
+
+        code_lower_Q_macro: code_lower_Q_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_Q";
+            bindings = <&kp H &kp N0 &kp LS(X) &kp LS(FSLH)>;
+        };
+
+        code_Q: code_Q {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_Q_macro &code_upper_Q_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_R_macro: code_upper_R_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_R";
+            bindings = <&kp LS(C) &kp V &kp LS(N5) &kp N7>;
+        };
+
+        code_lower_R_macro: code_lower_R_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_R";
+            bindings = <&kp D &kp LS(J) &kp LS(N6) &kp N5>;
+        };
+
+        code_R: code_R {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_R_macro &code_upper_R_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_S_macro: code_upper_S_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_S";
+            bindings = <&kp LS(W) &kp N3 &kp X &kp EQUAL>;
+        };
+
+        code_lower_S_macro: code_lower_S_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_S";
+            bindings = <&kp N6 &kp K &kp LS(A) &kp LS(N6)>;
+        };
+
+        code_S: code_S {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_S_macro &code_upper_S_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_T_macro: code_upper_T_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_T";
+            bindings = <&kp LS(N2) &kp N1 &kp LS(S) &kp P>;
+        };
+
+        code_lower_T_macro: code_lower_T_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_T";
+            bindings = <&kp N9 &kp Z &kp LS(N3) &kp LS(R)>;
+        };
+
+        code_T: code_T {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_T_macro &code_upper_T_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_U_macro: code_upper_U_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_U";
+            bindings = <&kp N0 &kp LS(N3) &kp O &kp LS(A)>;
+        };
+
+        code_lower_U_macro: code_lower_U_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_U";
+            bindings = <&kp N3 &kp H &kp EQUAL &kp LS(L)>;
+        };
+
+        code_U: code_U {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_U_macro &code_upper_U_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_V_macro: code_upper_V_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_V";
+            bindings = <&kp LS(N1) &kp LS(X) &kp J &kp N9>;
+        };
+
+        code_lower_V_macro: code_lower_V_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_V";
+            bindings = <&kp LS(N6) &kp N4 &kp LS(Z) &kp Z>;
+        };
+
+        code_V: code_V {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_V_macro &code_upper_V_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_W_macro: code_upper_W_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_W";
+            bindings = <&kp LS(N3) &kp D &kp N8 &kp LS(S)>;
+        };
+
+        code_lower_W_macro: code_lower_W_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_W";
+            bindings = <&kp LS(EQUAL) &kp LS(D) &kp J &kp N5>;
+        };
+
+        code_W: code_W {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_W_macro &code_upper_W_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_X_macro: code_upper_X_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_X";
+            bindings = <&kp E &kp N7 &kp LS(V) &kp LS(N8)>;
+        };
+
+        code_lower_X_macro: code_lower_X_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_X";
+            bindings = <&kp N8 &kp LS(N6) &kp L &kp LS(J)>;
+        };
+
+        code_X: code_X {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_X_macro &code_upper_X_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_Y_macro: code_upper_Y_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_Y";
+            bindings = <&kp N9 &kp LS(B) &kp Q &kp EQUAL>;
+        };
+
+        code_lower_Y_macro: code_lower_Y_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_Y";
+            bindings = <&kp LS(N2) &kp I &kp N9 &kp LS(S)>;
+        };
+
+        code_Y: code_Y {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_Y_macro &code_upper_Y_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_upper_Z_macro: code_upper_Z_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_UPPER_Z";
+            bindings = <&kp LS(K) &kp T &kp LS(FSLH) &kp N0>;
+        };
+
+        code_lower_Z_macro: code_lower_Z_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_LOWER_Z";
+            bindings = <&kp N3 &kp LS(Q) &kp LS(N4) &kp P>;
+        };
+
+        code_Z: code_Z {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_lower_Z_macro &code_upper_Z_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_0_macro: code_num_0_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_0";
+            bindings = <&kp LS(GRAVE) &kp N3 &kp LS(X) &kp K>;
+        };
+
+        code_num_0: code_num_0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_0_macro &code_num_0_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_1_macro: code_num_1_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_1";
+            bindings = <&kp LS(O) &kp N9 &kp M &kp LS(N4)>;
+        };
+
+        code_num_1: code_num_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_1_macro &code_num_1_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_2_macro: code_num_2_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_2";
+            bindings = <&kp N7 &kp Q &kp LS(I) &kp LS(EQUAL)>;
+        };
+
+        code_num_2: code_num_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_2_macro &code_num_2_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_3_macro: code_num_3_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_3";
+            bindings = <&kp LS(D) &kp U &kp LS(N8) &kp N9>;
+        };
+
+        code_num_3: code_num_3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_3_macro &code_num_3_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_4_macro: code_num_4_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_4";
+            bindings = <&kp N8 &kp LS(EQUAL) &kp LS(G) &kp Q>;
+        };
+
+        code_num_4: code_num_4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_4_macro &code_num_4_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_5_macro: code_num_5_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_5";
+            bindings = <&kp N4 &kp V &kp LS(N3) &kp LS(G)>;
+        };
+
+        code_num_5: code_num_5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_5_macro &code_num_5_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_6_macro: code_num_6_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_6";
+            bindings = <&kp LS(L) &kp S &kp LS(EQUAL) &kp N7>;
+        };
+
+        code_num_6: code_num_6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_6_macro &code_num_6_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_7_macro: code_num_7_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_7";
+            bindings = <&kp P &kp LS(N1) &kp LS(S) &kp N1>;
+        };
+
+        code_num_7: code_num_7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_7_macro &code_num_7_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_8_macro: code_num_8_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_8";
+            bindings = <&kp LS(N5) &kp N1 &kp F &kp LS(P)>;
+        };
+
+        code_num_8: code_num_8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_8_macro &code_num_8_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        code_num_9_macro: code_num_9_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "CODE_NUM_9";
+            bindings = <&kp N6 &kp LS(T) &kp LS(N8) &kp G>;
+        };
+
+        code_num_9: code_num_9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&code_num_9_macro &code_num_9_macro>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
