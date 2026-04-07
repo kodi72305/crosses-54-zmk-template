@@ -1,4 +1,5 @@
 // Список auto-shift мод-морфов для всех букв/цифр.
+#if ENABLE_AUTOSHIFT
 MOD_MORPH_AS(Q)
 MOD_MORPH_AS(W)
 MOD_MORPH_AS(E)
@@ -37,3 +38,4 @@ MOD_MORPH_AS(FSLH)
 MOD_MORPH_AS(BSLH)
 MOD_MORPH_AS(LBKT)
 MOD_MORPH_AS(RBKT)
+#endif

@@ -1,4 +1,7 @@
 #include "keys_ru.h"
+// Автошифт отключён по умолчанию (Keymap Editor не понимает custom макросы).
+// Поставь 1, чтобы вернуть поведение MOD_MORPH_AS/AS().
+#define ENABLE_AUTOSHIFT 0
 #include "mod_morph_macros.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>

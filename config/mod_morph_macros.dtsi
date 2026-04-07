@@ -2,6 +2,12 @@
 #ifndef MOD_MORPH_MACROS_DTSI
 #define MOD_MORPH_MACROS_DTSI
 
+#ifndef ENABLE_AUTOSHIFT
+#define ENABLE_AUTOSHIFT 0
+#endif
+
+#if ENABLE_AUTOSHIFT
+
 #define ZB0 #binding-cells = <0>
 // Модификаторы, которые отслеживает morph-поведение (оба Shift/Ctrl/Alt/GUI).
 #define MODS_FOR_AS (MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL)
@@ -18,5 +24,12 @@
 
 // Упрощение для использования в keymap.
 #define AS(keycode) &as_##keycode
+
+#else
+
+// Автошифт отключён — подставляем обычный &kp <keycode>.
+#define AS(keycode) &kp keycode
+
+#endif /* ENABLE_AUTOSHIFT */
 
 #endif /* MOD_MORPH_MACROS_DTSI */
